@@ -1,0 +1,40 @@
+# Build artifacts
+*.o      # Object files
+*.obj    # Object files (Windows)
+*.exe    # Executables (Windows)
+*.dll    # Dynamic Link Libraries (Windows)
+*.lib    # Library files (Windows)
+*.a      # Archive files (Linux/macOS)
+*.so     # Shared objects (Linux/macOS)
+*.out    # Generic executable output
+
+# Build directories
+build/
+bin/
+Debug/
+Release/
+
+# IDE specific files (examples)
+.vs/         # Visual Studio solution files
+*.VC.opendb  # Visual Studio database files
+*.VC.db      # Visual Studio database files
+*.VC.suo     # Visual Studio solution user options
+*.VC.user    # Visual Studio user files
+*.VC.filters # Visual Studio filter files
+.vscode/     # VS Code workspace settings
+.idea/       # IntelliJ IDEA project files (for CLion)
+
+# CMake build files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+_CPack_Packages/
+
+# Other temporary or generated files
+*~       # Backup files
+*.tmp    # Temporary files
+*.log    # Log files
+*.swp    # Vim swap files
+*.bak    # Backup files
