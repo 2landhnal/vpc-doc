@@ -2,6 +2,7 @@
 // using scanf()
 #include <cstdio>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -9,8 +10,10 @@ using namespace std;
 int main()
 {
     // creating an array of size "size"
-    int size = 5;
-    int arr[size];
+    int size;
+    printf("Enter size of array: ");
+    scanf("%d", &size);
+    vector<int> arr(size);
 
     // going to each element and assigning the value entered
     // by the user

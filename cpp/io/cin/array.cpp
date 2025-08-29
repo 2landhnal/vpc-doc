@@ -6,7 +6,9 @@ using namespace std;
 int main()
 {
     // defining array size
-    int size = 5;
+    int size;
+    cout << "Enter size of array: ";
+    cin >> size;
     // defining array of size "size"
     int numbers[size];
 

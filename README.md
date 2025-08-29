@@ -6,5 +6,8 @@
 ## Run C++
 `g++ path/to/file -o out && ./out`
 
+## Run java
+`javac path/to/file && java Main`
+
 ## cin vs scanf perform
 [StackOverflow](https://stackoverflow.com/questions/1042110/using-scanf-in-c-programs-is-faster-than-using-cin)
