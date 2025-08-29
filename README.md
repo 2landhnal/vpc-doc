@@ -1,6 +1,6 @@
 ## Table of content
-`cp-algoruthms-main`: Theory + c++ concept
-`ACM-ICPC-Algorithms-master`: Theory + c++ concept
+`cp-algoruthms-main`: Theory + c++ concept\
+`ACM-ICPC-Algorithms-master`: Theory + c++ concept\
 `cpp/io`: io array + matrix + file
 
 ## Run C++
