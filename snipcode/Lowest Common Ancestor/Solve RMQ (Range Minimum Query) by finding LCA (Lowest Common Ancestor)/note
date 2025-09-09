@@ -1,0 +1,7 @@
+Ý tưởng Cartesian Tree
+
+Cartesian Tree là một cây nhị phân được xây dựng từ một mảng A[0..n-1] sao cho:
+Heap property: nút cha ≤ nút con (min-heap) hoặc nút cha ≥ nút con (max-heap). Ở đây dùng min-heap.
+Inorder traversal của cây bằng chính mảng gốc A.
+
+Mục tiêu: từ mảng A, tìm ra cấu trúc cha-con sao cho thoả 2 điều kiện trên.

@@ -1,0 +1,5 @@
+Tìm tổ tiên chung thấp nhất (LCA) trong cây, nhưng dùng phương pháp Binary Lifting để tối ưu truy vấn.
+
+So sánh nhỏ
+Euler Tour + Sparse Table: cực nhanh cho truy vấn LCA, nhưng phức tạp.
+Binary Lifting: chậm hơn 1 chút (O(log n)) nhưng linh hoạt, trực quan, gọn nhẹ và tiện kết hợp các bài toán trên cây.

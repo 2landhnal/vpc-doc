@@ -1,0 +1,7 @@
+Bối cảnh
+Khi giải các bài toán tìm cây khung nhỏ nhất (MST), ngoài Kruskal’s algorithm, còn có một thuật toán khác cũng nổi tiếng là Prim’s algorithm.
+
+Prim khác Kruskal ở cách tiếp cận:
+Kruskal: bắt đầu từ cạnh nhỏ nhất, dần dần nối các thành phần rời nhau lại → phù hợp khi số cạnh ít và dễ dùng DSU.
+Prim: bắt đầu từ một đỉnh bất kỳ, sau đó mở rộng dần tập các đỉnh đã chọn bằng cách lấy cạnh rẻ nhất nối tập này ra ngoài → giống như Dijkstra cho đồ thị vô hướng có trọng số.
+Thuật toán Prim thường hiệu quả hơn cho đồ thị dense (nhiều cạnh), trong khi Kruskal hay được dùng cho đồ thị sparse (ít cạnh).

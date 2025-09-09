@@ -1,0 +1,17 @@
+Trong lý thuyết đồ thị, tổ tiên chung thấp nhất (LCA) của hai đỉnh u và v trong cây là đỉnh w gần gốc nhất mà cả u và v đều có thể truy cập. 
+
+2. Khi nào sử dụng
+LCA thường được sử dụng trong các bài toán:
+
+Khoảng cách giữa hai nút trong cây:
+dist(u,v) = depth[u] + depth[v] - 2*depth[LCA(u,v)]
+
+Tìm tổ tiên chung trong hệ thống phân cấp:
+Hệ thống file, cơ cấu tổ chức, cây phân cấp.
+
+Bài toán về nhánh cây:
+Số nút trên đường từ u đến v.
+Kiểm tra xem một nút có nằm trên đường nối giữa hai nút khác không.
+
+Ứng dụng trong đồ thị:
+Khi cây được sinh ra từ đồ thị (như MST) và cần query nhanh các thông tin về nhánh.

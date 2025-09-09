@@ -1,0 +1,20 @@
+Trang Topological Sort
+ trên CP-Algorithms giới thiệu thuật toán sắp xếp topo cho Directed Acyclic Graphs (DAGs) – đồ thị có hướng không chu trình. Đây là một thuật toán cơ bản trong lý thuyết đồ thị, thường dùng để xác định thứ tự hợp lệ của các công việc khi có phụ thuộc.
+
+📌 Bối cảnh và ứng dụng
+Sắp xếp topo (topological sorting):
+Cho đồ thị có hướng không chu trình (DAG).
+
+Mục tiêu: sắp xếp các đỉnh sao cho nếu có cạnh 
+u→v, thì u xuất hiện trước v trong thứ tự.
+
+Các ứng dụng điển hình:
+Lên lịch công việc:Công việc A phải xong trước B, B phải xong trước C → xác định thứ tự thực hiện.
+Biên dịch phần mềm: Xác định thứ tự biên dịch các file khi có phụ thuộc.
+Chuỗi công thức toán học hoặc biểu thức:Xử lý các phép toán theo thứ tự phụ thuộc.
+Bài toán graph với dependencies:Tìm đường đi hợp lệ hoặc xác định tiến trình tính toán.
+
+Lưu ý quan trọng:
+Chỉ áp dụng với DAG.
+Nếu đồ thị có chu trình, sắp xếp topo không tồn tại.
+

@@ -1,0 +1,5 @@
+Bối cảnh tổng quát
+
+Mục tiêu: Tìm đường đi ngắn nhất từ một đỉnh nguồn đến mọi đỉnh khác trong một đồ thị có trọng số âm. Đây là điểm khác biệt then chốt so với thuật toán Dijkstra vốn không cho phép cạnh có trọng số âm.
+
+Thách thức: Khi đồ thị chứa chu trình âm (negative cycle) mà có thể đi tới được từ đỉnh nguồn, thì không tồn tại đường đi ngắn nhất (kết quả có trọng số “giảm dần mãi”, hướng về âm vô hạn). Thuật toán cần không chỉ phát hiện điều này mà còn có thể xác định chu trình âm nếu có.

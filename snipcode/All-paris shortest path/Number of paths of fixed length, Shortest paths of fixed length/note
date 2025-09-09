@@ -1,0 +1,11 @@
+Bài toán đặt ra
+
+Bạn có một đồ thị có trọng số (có thể có hướng).
+Bạn muốn tìm đường đi ngắn nhất từ s → t nhưng độ dài đúng bằng k cạnh (không phải ≤ k, mà là chính xác k).
+
+
+Bối cảnh áp dụng
+Khi bạn cần tìm đường đi chính xác k bước trong đồ thị, ví dụ:
+Bài toán trên đồ thị có ràng buộc “đi đúng số bước” (như trong bài toán trên ICPC/olympiad).
+Các mô hình mạng, logistics, hay bài toán “đi qua đúng k trạm/trung gian”.
+Đặc biệt hữu ích khi k lớn (ví dụ k = 10^9), vì không thể chạy DP tuyến tính theo k được → phải dùng binary exponentiation của ma trận.

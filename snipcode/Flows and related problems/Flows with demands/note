@@ -1,0 +1,22 @@
+Bối cảnh của bài “Flow with Demands” trên CP-Algorithms là về bài toán luồng cực đại (maximum flow) nhưng có ràng buộc về nhu cầu (demand) và công suất (capacity) trên các đỉnh hoặc cạnh. Cụ thể:
+
+1. Mô tả bài toán
+Ta có mạng lưới luồng (graph) với:
+Cạnh có công suất tối đa (capacity)
+Một số cạnh có lưu lượng tối thiểu cần đạt (demand)
+
+Ta muốn tìm một luồng hợp lệ:
+Luồng trên mỗi cạnh ≥ demand và ≤ capacity
+Luồng tại các đỉnh tuân theo luật bảo toàn luồng (sum in = sum out)
+Đây là một bài toán mở rộng của max-flow thông thường, vì không chỉ cần tính luồng cực đại, mà còn phải đảm bảo các yêu cầu tối thiểu trên các cạnh.
+
+2. Ý tưởng giải thuật
+Giải thuật thường dùng biến đổi sang mạng luồng chuẩn:
+Điều chỉnh công suất và thêm cạnh giả (super source/sink) để “bù” các nhu cầu.
+Chuyển bài toán “luồng với demand” thành một bài toán luồng cực đại thông thường.
+Nếu luồng cực đại trong mạng mới bằng tổng demand, thì bài toán có lời giải hợp lệ.
+
+Công thức cơ bản:
+Với cạnh (u → v) có demand d và capacity c, ta làm:
+Giảm công suất: c* = c - d
+Thêm luồng từ super-source/super-sink để đảm bảo demand d

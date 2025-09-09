@@ -1,0 +1,16 @@
+MPM (Malhotra, Pramodh-Kumar, Maheshwari) algorithm:
+Là một phiên bản cải tiến của preflow-push.
+
+Mục tiêu: giảm số lần thao tác push trên các đỉnh bằng cách:
+Xây dựng layered network từ đồ thị residual.
+Tìm tất cả đỉnh khả dụng (active vertices) trong layer cùng lúc.
+Thực hiện push từ tất cả các đỉnh khả dụng đồng thời, cập nhật preflow.
+Được gọi là “Maximum Preflow Push” vì mỗi bước tối đa hóa lượng flow push từ layer đó.
+
+Ưu điểm:
+Nhanh hơn so với push-relabel cơ bản trong nhiều trường hợp, đặc biệt với đồ thị lớn hoặc nhiều cạnh.
+hoặc tốt hơn trong các trường hợp đồ thị đặc.
+
+Khi nào sử dụng:
+Khi bạn cần tối ưu tính luồng cực đại trên các mạng lớn, đặc biệt là đồ thị dày (dense graph).
+Khi các thuật toán như Dinic hoặc Edmonds-Karp quá chậm.

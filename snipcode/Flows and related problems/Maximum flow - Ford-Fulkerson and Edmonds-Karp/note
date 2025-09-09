@@ -1,0 +1,9 @@
+Max Flow (luồng cực đại) trên đồ thị có hướng với dung lượng trên các cạnh. Cụ thể:
+
+1. Bối cảnh bài toán
+Cho một đồ thị hướng G=(V,E), mỗi cạnh (u,v) có dung lượng c(u,v).
+
+Xác định nguồn (source) s và cống (sink) t.
+Tìm luồng cực đại từ s → t thỏa các điều kiện:
+Capacity constraint: 0 ≤ flow(u,v) ≤ c(u,v)
+Flow conservation: với mọi nút v ≠ s,t, tổng luồng đi vào = tổng luồng đi ra.

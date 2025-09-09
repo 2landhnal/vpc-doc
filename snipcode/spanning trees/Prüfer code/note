@@ -1,0 +1,11 @@
+1. Bối cảnh của bài viết trên cp-algorithms
+Trang Prufer code – cp-algorithms
+ nói về Prufer code (mã Prüfer).
+Đây là một cách mã hóa cây (tree) thành một dãy số nguyên (sequence).
+Ngược lại, từ Prufer code ta có thể xây dựng lại cây.
+Nó là một công cụ toán học/combinatorics thường dùng trong lý thuyết đồ thị, tổ hợp, và thuật toán.
+
+2. Ý nghĩa
+Một cây có n đỉnh khác nhau có đúng n^(n-2) cách tạo cây khác nhau (Cayley’s formula).
+Mỗi cây như vậy có thể được biểu diễn duy nhất bằng một Prufer sequence độ dài n-2.
+Điều này biến bài toán "đếm số lượng cây" hoặc "lưu trữ cây" thành bài toán xử lý trên mảng (dễ hơn nhiều).

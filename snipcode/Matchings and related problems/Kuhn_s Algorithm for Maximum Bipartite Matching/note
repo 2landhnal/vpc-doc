@@ -1,0 +1,8 @@
+Trang Kuhn Algorithm – Maximum Bipartite Matching trên CP-Algorithms cung cấp một phương pháp hiệu quả để giải quyết bài toán ghép cặp tối đa trong đồ thị hai phía (maximum bipartite matching). 
+đặc biệt hữu ích trong các bài toán phân công công việc, ghép đôi, và tối ưu hóa mạng lưới.
+
+📌 Bối cảnh và ứng dụng
+Khi giải quyết các bài toán liên quan đến việc ghép cặp tối đa giữa hai tập hợp, thuật toán Kuhn giúp xác định số lượng ghép cặp tối đa sao cho không có đỉnh nào bị ghép nhiều lần. Điều này có ứng dụng trong nhiều lĩnh vực như:
+Phân công công việc: Ghép công nhân với công việc sao cho tổng hiệu quả là tối đa.
+Ghép đôi: Ghép học sinh với phòng học, bác sĩ với bệnh nhân, hoặc sinh viên với giảng viên.
+Tối ưu hóa mạng lưới: Tìm kiếm các kết nối tối ưu trong mạng lưới.

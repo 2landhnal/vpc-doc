@@ -1,0 +1,8 @@
+Bài toán (Problem statement)
+
+Input: một đồ thị vô hướng với n đỉnh, m cạnh.
+
+Nhiệm vụ:
+Xác định xem đồ thị có chứa chu trình không.
+Nếu có, tìm và in ra một chu trình (danh sách các đỉnh thuộc chu trình).
+Nếu không có, in "IMPOSSIBLE" (hoặc một cách báo khác).

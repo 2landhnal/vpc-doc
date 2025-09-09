@@ -1,0 +1,18 @@
+1. Định nghĩa
+Input: Mạng luồng (flow network) với:
+Tập đỉnh và tập cạnh (u → v)
+Công suất cạnh capacity(u, v)
+Chi phí trên mỗi đơn vị luồng cost(u, v)
+
+Task: Tìm luồng tối đa hoặc luồng nhất định sao cho:
+Không vượt quá công suất mỗi cạnh
+Luồng vào = luồng ra tại mỗi đỉnh (ngoại trừ source/sink)
+Tổng chi phí của toàn mạng là nhỏ nhất với các ràng buộc luồng chuẩn.
+
+2. Bối cảnh và ứng dụng
+Đây là bài toán mở rộng của max-flow, thêm yếu tố chi phí.
+
+Thường dùng trong:
+Logistic: tối ưu vận chuyển hàng hóa, giảm chi phí
+Scheduling: phân bổ tài nguyên với chi phí tối thiểu
+Network routing: gửi dữ liệu với chi phí tối thiểu qua mạng

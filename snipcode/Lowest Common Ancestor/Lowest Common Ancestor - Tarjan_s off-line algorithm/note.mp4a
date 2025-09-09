@@ -1,0 +1,6 @@
+Mục tiêu
+Xác định Lowest Common Ancestor (LCA) cho nhiều truy vấn trên một cây (tree).
+
+Offline nghĩa là tất cả các truy vấn được biết trước, không cần trả lời ngay khi đọc node.
+Khi có một cây với n nodes và q truy vấn LCA(u, v).
+Thay vì trả lời từng truy vấn online (ví dụ binary lifting, O(log n) mỗi truy vấn), Tarjan’s algorithm cho phép trả lời tất cả các truy vấn offline trong O(n + q α(n)) với Union-Find (DSU).

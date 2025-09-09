@@ -1,0 +1,27 @@
+Bài trên CP-Algorithms: “Lowest Common Ancestor in O(1) with O(n) preprocessing” (Farach-Colton & Bender, 2000) là một phương pháp tìm LCA cực nhanh.
+
+Bối cảnh và mục tiêu:
+
+Bài toán:
+Cho một cây với n đỉnh, cần trả lời nhiều truy vấn LCA(u, v) – tìm đỉnh chung thấp nhất của u và v.
+
+Các phương pháp trước:
+Euler tour + segment tree: O(n log n) preprocess, O(1) query với RMQ, hoặc O(log n) query nếu dùng segment tree thuần.
+Binary lifting: O(n log n) preprocess, O(log n) query.
+Farach-Colton & Bender (F&B):
+
+Mục tiêu: trả lời LCA trong O(1) sau O(n) preprocess, tức là tối ưu cả về thời gian query và preprocessing.
+Sử dụng kỹ thuật “reduction to RMQ trong mảng +/-1”:
+Chuyển cây thành Euler tour.
+Lưu mức độ của các đỉnh trong tour.
+Biến bài toán LCA thành Range Minimum Query (RMQ) trên mảng +/-1.
+Với RMQ +/-1, có thể dựng lookup table nhỏ, trả lời query O(1).
+
+Khi nào dùng:
+Khi có rất nhiều query LCA trên cùng một cây, mà cây có n lớn (ví dụ n ~ 10^5 – 10^6).
+Khi muốn tối ưu hóa thời gian truy vấn, tốt hơn hẳn binary lifting (O(log n) query) và Euler tour + segment tree (O(log n) query).
+
+Đặc điểm:
+Preprocess O(n), query O(1).
+Phức tạp hơn để implement so với binary lifting hoặc Euler tour + segment tree.
+Thường dùng trong các bài offline / nhiều query LCA, ví dụ các bài toán tree distance, tree path queries, dynamic programming trên cây.

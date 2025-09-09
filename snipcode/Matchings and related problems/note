@@ -1,0 +1,32 @@
+1. Khái niệm Matching
+Trong đồ thị vô hướng G=(V,E): Matching là một tập các cạnh M⊆E sao cho không có hai cạnh nào trong M chia sẻ cùng một đỉnh.
+Nếu mỗi đỉnh của đồ thị xuất hiện trong đúng một cạnh của M, ta gọi là Perfect Matching (Matching hoàn hảo).
+
+Ví dụ đơn giản:
+Đồ thị:V = {1,2,3,4}, E = {(1,2),(1,3),(2,4),(3,4)}
+Các matching có thể là:
+M={(1,2),(3,4)} → Đây là perfect matching.
+𝑀={(1,3)} → Không phải perfect nhưng vẫn là matching hợp lệ.
+
+2. Các loại bài toán liên quan
+Maximum Matching (MM):
+Tìm tập matching có số cạnh lớn nhất.
+Ví dụ: Trong ví dụ trên, maximum matching có 2 cạnh.
+
+Perfect Matching (PM):
+Tìm matching mà mọi đỉnh đều được ghép.
+Áp dụng khi muốn “ghép tất cả các đối tượng” mà không bỏ sót ai.
+
+Maximum Weight Matching:
+Nếu mỗi cạnh có trọng số, tìm matching sao cho tổng trọng số lớn nhất.
+Ví dụ: ghép công nhân với công việc sao cho tổng hiệu quả cao nhất.
+
+Bipartite Matching:
+Khi đồ thị là đồ thị hai phía (bipartite graph), các thuật toán đặc biệt như Hungarian Algorithm hoặc Hopcroft-Karp sẽ rất hiệu quả.
+
+3. Khi nào sử dụng Matching
+Matching thường xuất hiện khi bạn muốn “ghép các đối tượng theo cặp” mà không vi phạm điều kiện:
+Ghép công nhân – công việc (Assignment problem)
+Ghép sinh viên – phòng thí nghiệm
+Ghép bác sĩ – bệnh nhân
+Mạng lưới, hẹn hò, hoặc pairing trong hệ thống

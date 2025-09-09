@@ -1,0 +1,7 @@
+Bối cảnh bài toán
+
+Loại đồ thị: có hướng hoặc vô hướng, có trọng số (các cạnh có thể mang số âm).
+
+Mục tiêu: phát hiện xem trong đồ thị có tồn tại chu trình âm (negative cycle) hay không, và nếu có thì khôi phục chu trình đó.
+Chu trình âm = một chu trình mà tổng trọng số các cạnh < 0.
+Sự tồn tại chu trình âm có nghĩa là: không thể định nghĩa được "đường đi ngắn nhất" vì có thể lặp lại chu trình âm để làm tổng độ dài đường đi → âm vô hạn.

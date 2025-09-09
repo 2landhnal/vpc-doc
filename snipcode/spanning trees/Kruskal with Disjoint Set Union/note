@@ -1,0 +1,5 @@
+Kết quả:
+
+Kruskal với DSU chạy trong O(m log m) (do phải sort cạnh).
+Phần DSU chỉ tốn gần như O(m).
+Đây là giải pháp chuẩn để giải MST khi đồ thị thưa (sparse graph).

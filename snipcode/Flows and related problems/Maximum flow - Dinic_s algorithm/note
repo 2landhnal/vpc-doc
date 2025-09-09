@@ -1,0 +1,18 @@
+Ý tưởng chính của Dinic:
+Level graph: Xây dựng một đồ thị tầng (level graph) bằng BFS, trong đó mỗi đỉnh có cấp (level) cho biết khoảng cách tính theo số cạnh từ s. Chỉ xét các cạnh tăng level để tránh các vòng lặp vô ích.
+Blocking flow: Sử dụng DFS để đẩy luồng tối đa qua level graph cho tới khi không còn đường tăng luồng nào.
+Lặp lại quá trình BFS → DFS tới khi không còn đường nào từ s đến t.
+
+Ưu điểm:
+Tốc độ nhanh hơn Edmonds-Karp (O(V²E) cho Edmonds-Karp, O(EV²) worst-case, nhưng thực tế Dinic thường chạy nhanh hơn)
+Hoạt động tốt với đồ thị có nhiều cạnh hoặc nhiều đỉnh.
+Phù hợp cho các bài toán luồng cực đại trên các đồ thị lớn hoặc các bài toán luồng trên mạng bipartite (ví dụ: bipartite matching).
+
+Khi nào dùng:
+Khi cần tối ưu về tốc độ cho max-flow so với Edmonds-Karp.
+Khi số đỉnh và cạnh lớn (VD: >1000 đỉnh, >10⁴ cạnh).
+Khi muốn kết hợp với các bài toán khác như bipartite matching, min-cut, multi-source/multi-sink flow.
+
+Khác biệt so với Edmonds-Karp:
+Edmonds-Karp dùng BFS để tìm đường tăng luồng mỗi lần một đường, Dinic dùng BFS để tạo level graph, sau đó đẩy blocking flow (nhiều đường cùng lúc).
+Vì vậy Dinic ít phải lặp BFS nhiều lần hơn, đặc biệt với các đồ thị lớn.

@@ -1,0 +1,21 @@
+1. Bối cảnh của bài toán
+Mục tiêu chính
+Tìm đường đi ngắn nhất từ một nguồn duy nhất (single source) đến tất cả các đỉnh khác trong một đồ thị có trọng số không âm.
+Đây là bài toán Single-Source Shortest Paths (SSSP), một nền tảng quan trọng trong lý thuyết đồ thị và ứng dụng thực tế.
+
+Các ứng dụng phổ biến
+Bản đồ và GPS: đưa ra tuyến đường nhanh nhất giữa các thành phố hoặc vị trí.
+Giao tiếp mạng: giao thức định tuyến như OSPF hoặc IS-IS dùng Dijkstra để xác định đường đi hiệu quả nhất.
+Trò chơi và AI: xác định đường đi tối ưu trong môi trường ảo hoặc trò chơi.
+Lập lịch và tối ưu hóa logistics: tính đường đi ngắn nhất trong việc giao hàng, quản lý mạng lưới, robot định hướng…
+Upper Route Planner
+
+
+2. Tư tưởng cốt lõi của thuật toán
+Cơ chế hoạt động – Greedy + Độ ưu tiên
+Khởi tạo khoảng cách d[s] = 0, các đỉnh khác là vô cùng lớn (∞).
+Lặp cho đến khi tất cả các đỉnh có khoảng cách tối ưu được xác định:
+Chọn đỉnh chưa xử lý có d[v] nhỏ nhất.
+Dùng các cạnh từ v để "thu gọn" khoảng cách của đỉnh kề (relaxation).
+Bằng cách này, đảm bảo sau khi một đỉnh được đánh dấu, khoảng cách đến nó là nhỏ nhất có thể.
+Với biểu đồ dùng hàng đợi ưu tiên (heap), độ phức tạp đạt O((N + M) log N), rất hiệu quả cho đồ thị lớn và thưa.

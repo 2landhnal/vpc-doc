@@ -1,0 +1,14 @@
+Bối cảnh của bài viết Push–Relabel algorithm trên CP-Algorithms là về giải bài toán maximum flow (dòng cực đại) trong mạng luồng (flow network), nhưng khác với các thuật toán dựa trên tìm đường đi tăng cường (augmenting paths) như Edmonds-Karp hay Dinic.
+
+Cụ thể:
+
+1. Mục tiêu
+Cho một mạng luồng với đỉnh nguồn 
+s và đỉnh đích t, cùng các cạnh có công suất (capacity).
+Tìm dòng cực đại từ s tới t.
+
+2. Ý tưởng chính
+Thay vì tìm đường đi tăng cường (augmenting path) như Edmonds-Karp:
+Push–Relabel duy trì "dòng dư tạm thời" (preflow), cho phép dòng vượt quá công suất bình thường tại các đỉnh trung gian (ngoại trừ nguồn và đích).
+Mỗi đỉnh có chiều cao (height label). Luồng chỉ có thể "đẩy" (push) từ đỉnh cao hơn sang đỉnh thấp hơn.
+Khi không thể push tiếp, nâng cao chiều cao (relabel) đỉnh để mở đường đi mới.

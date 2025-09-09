@@ -1,0 +1,14 @@
+Trang Bipartite Graph Check trên CP-Algorithms cung cấp một phương pháp hiệu quả để kiểm tra xem một đồ thị vô hướng có phải là đồ thị hai phía (bipartite graph) hay không. 
+📌 Bối cảnh và ứng dụng
+Kiểm tra tính hai phía của đồ thị là bước đầu tiên trong nhiều bài toán quan trọng:
+Ghép cặp tối đa: Xác định xem có thể ghép tất cả các phần tử từ hai tập hợp sao cho không có phần tử nào bị bỏ sót hay không.
+Thuật toán Kuhn: Tìm kiếm ghép cặp tối đa trong đồ thị hai phía.
+Thuật toán Hungarian: Giải quyết bài toán phân công công việc sao cho tổng chi phí là nhỏ nhất.
+Việc kiểm tra tính hai phía giúp xác định xem có thể áp dụng các thuật toán này hay không, vì chúng thường yêu cầu đồ thị phải là hai phía.
+
+🔍 Nội dung bài viết
+Bài viết trình bày cách kiểm tra tính hai phía của đồ thị thông qua hai phương pháp phổ biến:
+Sử dụng BFS (Breadth-First Search): Duyệt đồ thị theo chiều rộng, gán màu cho các đỉnh sao cho không có hai đỉnh kề nhau có cùng màu. Nếu phát hiện đỉnh kề nhau có cùng màu, đồ thị không phải là hai phía.
+Sử dụng DFS (Depth-First Search): Duyệt đồ thị theo chiều sâu, tương tự như BFS, nhưng sử dụng đệ quy để kiểm tra tính hai phía.
+Cả hai phương pháp này đều có độ phức tạp thời gian là 
+O(V+E), với V là số đỉnh và E là số cạnh của đồ thị.

@@ -1,0 +1,11 @@
+1. Flow (luồng) cơ bản
+
+Định nghĩa:
+Ta có một đồ thị hướng (directed graph) với các cạnh có dung lượng (capacity).
+
+Có một nguồn (source) s và một cống (sink) t.
+Một luồng là cách gửi “một lượng giá trị” từ s đến t qua các cạnh mà không vượt quá dung lượng của mỗi cạnh.
+
+Điều kiện luồng hợp lệ:
+Capacity constraint: 0 ≤ flow(u, v) ≤ capacity(u, v)
+Flow conservation: Trừ nguồn và cống, tổng luồng đi vào một nút = tổng luồng đi ra.

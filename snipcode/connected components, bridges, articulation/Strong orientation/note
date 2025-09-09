@@ -1,0 +1,26 @@
+Bối cảnh của bài toán "Strong Orientation"
+1. Định nghĩa và bản chất
+
+Strong orientation của một đồ thị vô hướng là cách gán hướng cho mỗi cạnh sao cho đồ thị có hướng thu được là strongly connected — tức là với mọi cặp đỉnh 
+u,v, tồn tại đường đi theo hướng từ u đến 
+v và ngược lại 
+Thuật Toán Cạnh Tranh
+Điều này tương đương với việc biến đồ thị vô hướng thành đồ thị có hướng mà mọi cặp đỉnh đều liên thông hai chiều.
+
+2. Robbins Theorem — Điều kiện cần và đủ
+Định lý Robbins (1939): Một đồ thị vô hướng có strong orientation khi và chỉ khi nó liên thông và không chứa bridge (cạnh cầu) 
+Nói cách khác
+Nếu đồ thị có bridge, thì khi gán hướng cho cạnh đó sẽ tạo ra phần tử không thể đi ngược lại, phá vỡ tính strongly connected.
+Ngược lại, nếu đồ thị liên thông và không có bridge, tức là 2-edge-connected, thì luôn có thể gán hướng để đồ thị trở thành strongly connected.
+
+3. Thuật toán xây dựng strong orientation
+Với đồ thị liên thông không chứa bridge, bạn có thể dùng DFS để gán hướng như sau:
+Chạy DFS từ một đỉnh gốc.
+Tất cả cạnh trong cây DFS (DFS tree edges) → hướng từ root đi ra.
+Tất cả cạnh ngược (back edges) → hướng từ descendant (đỉnh sâu hơn) về ancestor (đỉnh nông hơn).
+Cách gán này đảm bảo rằng từ bất kì đỉnh nào cũng đi lên được đến root (qua back edges hoặc tree edges), rồi từ root bạn có thể đi xuống bất cứ đỉnh nào (qua tree edges), đảm bảo tính strongly connected 
+
+Ứng dụng thực tế
+Mạng giao thông trong thành phố: Các đường ban đầu là hai chiều để dễ dàng sửa chữa một phần mà không bị chia cắt. Cuối tuần, chuyển sang thành mạng one-way streets nhưng vẫn phải liên thông toàn thành phố. Robbins gọi đó là "one-way street theorem" 
+Thiết kế mạng viễn thông: Cần đảm bảo hoạt động có hướng mà không gây chia cắt mạng.
+Lập kế hoạch giao thông: Gán hướng cho đường sao cho hệ thống vẫn mạnh về kết nối — tức là mỗi vị trí có thể đến mọi nơi khác và ngược lại.

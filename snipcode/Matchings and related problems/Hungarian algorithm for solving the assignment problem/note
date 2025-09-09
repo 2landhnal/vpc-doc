@@ -1,0 +1,18 @@
+Trang Hungarian Algorithm
+ trên CP-Algorithms giới thiệu thuật toán Hungarian để giải bài toán Assignment Problem (bài toán phân công công việc) trong đồ thị bipartite. Đây là một thuật toán kinh điển trong tối ưu hóa tổ hợp.
+
+📌 Bối cảnh và ứng dụng
+Bài toán phân công (Assignment Problem):
+Cho hai tập hợp A và B (ví dụ: công nhân và công việc) với cùng số lượng phần tử.
+Mỗi cặp (a,b) có trọng số/cost w(a,b) (chi phí hoặc hiệu quả).
+
+Mục tiêu: ghép mỗi phần tử trong A với một phần tử trong B sao cho tổng chi phí là nhỏ nhất (hoặc tổng lợi ích là lớn nhất).
+Tập trung vào đồ thị bipartite trọng số:
+Đỉnh của tập hợp A nối với đỉnh của tập hợp B bằng các cạnh có trọng số.
+Hungarian Algorithm tìm maximum matching tối ưu theo trọng số.
+
+Ứng dụng thực tế:
+Phân công công nhân → công việc sao cho tổng hiệu quả tối đa hoặc chi phí tối thiểu.
+Ghép sinh viên → phòng thí nghiệm.
+Ghép bác sĩ → bệnh nhân.
+Bất kỳ bài toán ghép cặp tối ưu nào giữa hai tập hợp có trọng số.

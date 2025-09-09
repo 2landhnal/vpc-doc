@@ -1,0 +1,5 @@
+Bối cảnh / Problem Setting
+Eulerian Path: đường đi đi qua mỗi cạnh đúng một lần (có thể lặp lại đỉnh).
+Eulerian Cycle: đường đi đặc biệt là chu trình, xuất phát và kết thúc tại cùng một đỉnh, đi qua tất cả các cạnh đúng một lần.
+
+Bài toán này xuất phát từ bài toán bảy cây cầu Königsberg của Euler (1736) – nền tảng của Lý thuyết đồ thị.

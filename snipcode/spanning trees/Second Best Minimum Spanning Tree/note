@@ -1,0 +1,4 @@
+Bối cảnh của bài toán "Second Best MST"
+
+Bài toán cơ bản: Minimum Spanning Tree (MST) chọn tập cạnh có tổng trọng số nhỏ nhất để nối tất cả các đỉnh.
+Nhưng trong nhiều ứng dụng (và trong đề thi ICPC, Olympiad, contest), người ta có thể quan tâm đến không chỉ MST tốt nhất, mà còn cây khung nhỏ nhất thứ hai.

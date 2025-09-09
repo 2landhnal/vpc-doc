@@ -1,0 +1,25 @@
+Bối cảnh của “Maximum flow – Push–Relabel method (improved)” là về việc tính luồng cực đại trong một mạng luồng (flow network), nhưng sử dụng một phiên bản tối ưu hơn của thuật toán Push–Relabel cơ bản.
+
+Cụ thể:
+Bài toán: Cho một mạng có đỉnh và cạnh có dung lượng, cùng nguồn (s) và cống (t). Tìm luồng tối đa có thể truyền từ s đến t, thỏa mãn:
+Luồng trên cạnh ≤ dung lượng cạnh.
+Luồng vào = luồng ra cho tất cả đỉnh trung gian (ngoại trừ s, t).
+
+Push–Relabel cơ bản:
+Mỗi đỉnh có height và excess.
+Khi đỉnh có excess > 0, push luồng đến đỉnh láng giềng thấp hơn (height[u] > height[v]).
+Nếu không push được nữa, relabel tăng height.
+Lặp đến khi không còn đỉnh trung gian có excess.
+
+Push–Relabel improved:
+Gap relabeling: Nếu tồn tại một mức height trống (không đỉnh nào có height đó), tất cả các đỉnh có height > khoảng trống đó có thể tăng height lên tối đa, tránh lặp vô ích.
+Global relabeling heuristic: Định kỳ cập nhật height dựa trên khoảng cách thực sự tới t trong residual graph (thay vì chỉ cập nhật cục bộ), giúp thuật toán converge nhanh hơn.
+FIFO vs Highest-label: Chọn đỉnh để discharge theo hàng đợi FIFO hoặc đỉnh cao nhất, có thể ảnh hưởng đáng kể đến hiệu năng.
+
+Khi nào dùng:
+Mạng lớn, cạnh nhiều và push–relabel cơ bản quá chậm.
+Dạng dense graph (đồ thị dày), hiệu năng Push–Relabel improved vượt trội Ford–Fulkerson / Edmonds–Karp.
+
+Ý nghĩa:
+Thuật toán đạt O(V²√E) hoặc tốt hơn trong các trường hợp thực tế.
+Thường được dùng trong mạng viễn thông, network design, image segmentation, và các bài toán combinatorial optimization phức tạp.

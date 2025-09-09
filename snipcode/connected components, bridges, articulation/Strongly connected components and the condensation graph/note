@@ -1,0 +1,12 @@
+Trong lý thuyết đồ thị
+
+Strongly Connected Component (SCC) là một tập đỉnh trong đồ thị có hướng sao cho mọi cặp đỉnh trong đó đều có thể đi tới nhau qua các cạnh có hướng. Đây là loại phân vùng tối đa mà bất kỳ hai điểm trong cùng một phần đều liên thông theo cả hai chiều.
+Mỗi đỉnh thuộc đúng một SCC và các thành phần SCC tách biệt không giao nhau—nói cách khác, SCC giúp phân chia đồ thị thành các “cộng đồng liên thông chặt” trong đồ thị hướng.
+Condensation graph là đồ thị mới mà mỗi SCC được xem như một siêu-đỉnh, nối với nhau nếu có cạnh giữa các thành phần trong đồ gốc. Đặc biệt, đồ thị này luôn là acyclic (DAG)—đây là tính chất then chốt để xử lý sau hiệu quả.
+
+Trong thực tiễn
+SCC xuất hiện rộng rãi trong nhiều ứng dụng như:
+Phân tích mạng xã hội hoặc web: tìm các nhóm mà mọi người (hoặc trang) đều tương tác được với nhau.
+Lập lịch và phụ thuộc module: biết module A phụ thuộc B và ngược lại sẽ cho vào cùng một SCC.
+Driven logic (2-SAT): một biểu thức không thể thỏa nếu x và ¬x nằm trong cùng SCC của đồ thị biểu diễn các ràng buộc.
+Ứng dụng trong bản đồ & routing: một khu vực SCC mô tả nơi mà bạn có thể đi từ bất kỳ điểm nào đến điểm khác, không bị kẹt ở ngã rẽ một chiều

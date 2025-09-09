@@ -1,0 +1,21 @@
+Bối cảnh của trang này liên quan đến Bài toán Assignment (gán công việc) trong lý thuyết đồ thị và tối ưu hóa luồng.
+
+Cụ thể:
+
+Bài toán:
+Cho n người (hoặc công nhân) và n công việc.
+Mỗi người có một chi phí cụ thể khi thực hiện một công việc.
+
+Mục tiêu: gán mỗi người vào một công việc duy nhất sao cho tổng chi phí là nhỏ nhất.
+Cách mô hình hóa bằng đồ thị luồng:
+Tạo một bipartite graph:
+Một tập đỉnh là các người.
+Một tập đỉnh là các công việc.
+Nối mỗi người với mỗi công việc bằng một cạnh có capacity = 1 và cost = chi phí thực hiện công việc đó.
+Thêm source nối đến tất cả các người, và sink nối từ tất cả các công việc, mỗi cạnh cũng có capacity = 1 và cost = 0.
+Sau đó giải bài toán Min-Cost Max-Flow:
+Lưu lượng tối đa bằng số người/công việc (n).
+Chi phí tối thiểu chính là tổng chi phí gán tối ưu.
+
+Tóm lại:
+Đây là cách chuyển bài toán Assignment sang Min-Cost Flow, giúp áp dụng các thuật toán như Successive Shortest Path, Edmonds-Karp with costs, hoặc Dinic + potentials để tìm giải pháp tối ưu.

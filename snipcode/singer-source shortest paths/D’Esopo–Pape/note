@@ -1,0 +1,5 @@
+Đồ thị có trọng số dương hoặc âm (nhưng không có chu trình âm)
+
+Khác Dijkstra (chỉ áp dụng với trọng số không âm).
+Khác Bellman–Ford (xử lý được trọng số âm nhưng chậm hơn).
+Pape cho phép xử lý cạnh âm nhanh hơn Bellman–Ford trong thực tế.

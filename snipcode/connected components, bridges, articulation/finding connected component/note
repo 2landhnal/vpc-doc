@@ -1,0 +1,13 @@
+Ý tưởng chính
+
+Bài toán đặt ra: Tìm tất cả các thành phần liên thông (connected components) trong đồ thị.
+Để làm việc này, ta dùng DFS (Depth First Search) hoặc BFS (Breadth First Search).
+
+Cách làm
+Bắt đầu DFS/BFS từ một đỉnh (ví dụ đỉnh 0).
+Ta đánh dấu các đỉnh mà ta đi qua là visited.
+Sau khi kết thúc, ta đã tìm được một thành phần liên thông (component).
+Tìm đỉnh chưa được thăm (visited = false) → đó là điểm bắt đầu của một thành phần liên thông mới.
+Lặp lại DFS/BFS từ đó.
+Cứ tiếp tục cho đến khi tất cả đỉnh đã được thăm.
+👉 Kết quả: ta thu được tất cả các thành phần liên thông của đồ thị.

@@ -1,0 +1,16 @@
+1. Bối cảnh
+Offline bridge-finding: bạn đã biết toàn bộ đồ thị từ trước → chạy DFS một lần → tìm được toàn bộ bridges.
+Online bridge-finding: đồ thị ban đầu rỗng, và các cạnh được thêm dần vào.
+Sau mỗi lần thêm cạnh, ta cần biết:
+Hiện tại có bao nhiêu bridges?
+(Có thể còn muốn liệt kê toàn bộ các bridges).
+
+👉 Ứng dụng thực tế: hệ thống mạng, đường sá, graph thay đổi theo thời gian.
+
+2. Ý tưởng chính
+Thuật toán Online Bridges sử dụng Disjoint Set Union (DSU) để duy trì hai cấu trúc song song:
+DSU cho Connected Components (CC): để biết nhanh hai đỉnh có cùng thành phần liên thông không.
+DSU cho 2-edge-connected components (2ECC): để gom các đỉnh mà giữa chúng tồn tại ít nhất hai đường đi độc lập (tức là không có cạnh nào là “bridge” duy nhất nối chúng).
+Ngoài ra ta cần duy trì cây cầu (bridge tree):
+Các 2ECC trở thành đỉnh của cây.
+Các cạnh “bridge” nối giữa các 2ECC.

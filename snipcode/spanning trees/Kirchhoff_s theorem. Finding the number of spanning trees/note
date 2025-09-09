@@ -1,0 +1,11 @@
+bài toán đếm số lượng cây khung (spanning trees) của một đồ thị.
+
+Bối cảnh / động cơ
+Khi học về MST (Minimum Spanning Tree) hay DFS spanning tree, ta thường quan tâm tới cách tìm một cây khung cụ thể.
+Nhưng trong toán rời rạc & lý thuyết đồ thị, có những bài toán yêu cầu:
+🔹 Có bao nhiêu cây khung khác nhau tồn tại trong một đồ thị liên thông?
+
+Ví dụ:
+Đếm số lượng cách nối n đỉnh sao cho đồ thị vẫn liên thông.
+Trong mạng điện (cái tên “Kirchhoff”), người ta quan tâm tới số cách nối mạch điện sao cho hệ thống hoạt động.
+Trong sinh học, hóa học, cũng có các ứng dụng về đếm cấu trúc phân tử (isomer counting).

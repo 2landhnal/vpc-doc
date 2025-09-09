@@ -1,0 +1,18 @@
+Bài toán
+
+Ta có một đồ thị vô hướng (undirected graph).
+
+Một cạnh cầu (bridge) là một cạnh mà khi xóa đi, số thành phần liên thông của đồ thị tăng lên (tức là đồ thị bị tách ra nhiều mảnh hơn).
+Nhiệm vụ: tìm tất cả các cầu trong đồ thị.
+
+Ý tưởng thuật toán (DFS + thời gian vào đỉnh)
+Thuật toán này dùng DFS (Depth First Search) và có độ phức tạp O(N + M) (số đỉnh + số cạnh).
+
+Mấu chốt là ta cần theo dõi:
+tin[v]: thời gian mà DFS lần đầu tiên thăm đỉnh v (DFS discovery time).
+low[v]: đỉnh v (hoặc đỉnh con của v) có thể quay ngược về đỉnh nào sớm nhất thông qua các cạnh ngược (back edges).
+
+Trong DFS:
+Khi ta đi từ v -> to theo cây DFS:
+Sau khi duyệt to, nếu low[to] > tin[v] ⇒ cạnh (v, to) là một cầu.
+(Vì to và toàn bộ con cháu của nó không thể quay ngược về v hay tổ tiên của v).

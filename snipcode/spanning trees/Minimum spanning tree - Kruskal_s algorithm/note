@@ -1,0 +1,7 @@
+Bối cảnh
+Ta có một đồ thị vô hướng có trọng số, gồm n đỉnh và m cạnh.
+
+Yêu cầu: tìm cây khung nhỏ nhất (MST – Minimum Spanning Tree), tức là một tập hợp các cạnh nối tất cả các đỉnh của đồ thị lại với nhau với tổng trọng số nhỏ nhất có thể.
+Đây là một bài toán kinh điển trong lý thuyết đồ thị, thường gặp trong:
+Thiết kế mạng (LAN, điện, giao thông…) với chi phí thấp nhất.
+Bài toán tối ưu hoá khi cần “kết nối toàn bộ mà ít tốn kém nhất”.

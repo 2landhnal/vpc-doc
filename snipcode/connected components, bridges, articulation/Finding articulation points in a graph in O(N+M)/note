@@ -1,0 +1,25 @@
+1. Định nghĩa
+Articulation point (cut vertex): Một đỉnh mà khi xóa đi (cùng các cạnh nối với nó) thì số thành phần liên thông của đồ thị tăng lên.
+
+2. Trong ứng dụng thực tế
+
+Articulation points thường xuất hiện khi mô hình hoá hệ thống mạng lưới (network):
+Mạng máy tính / Internet
+Các đỉnh = máy chủ (routers, servers, data centers).
+Các cạnh = kết nối mạng.
+Một articulation point = router quan trọng, nếu hỏng → mạng chia cắt thành nhiều phần, gây mất kết nối.
+
+Mạng điện / nước / giao thông
+Đỉnh = trạm điện / trạm bơm / thành phố.
+Cạnh = đường dây, đường ống, tuyến đường.
+Articulation point = nút hạ tầng mà nếu bị loại bỏ → một số khu vực tách rời, không thể kết nối.
+
+Mạng xã hội / hệ thống giao tiếp
+Đỉnh = người dùng.
+Cạnh = mối quan hệ (friendship, follow, link).
+Articulation point = một người trung gian quan trọng, nếu loại bỏ thì cộng đồng bị chia nhỏ.
+
+Ý nghĩa trong thuật toán & bảo mật
+Trong phân tích mạng: tìm điểm yếu nhất để gia cố.
+Trong an ninh: phát hiện nút single-point-of-failure.
+Trong lập trình cạnh tranh (competitive programming): articulation points thường đi kèm với bridges để phân tích cấu trúc đồ thị.
